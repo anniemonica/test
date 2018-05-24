@@ -5,7 +5,7 @@ response.writeHead(200, {'Content-Type': 'text/plain'});
 if( url.parse(request.url).pathname == '/wait' ){
     var startTime = new Date().getTime();
     while(new Date().getTime()<startTime + 15000);
-    response.write('Thanks for waiting!');
+    response.write('Thanks for your visit!');
 }
 else{
     response.write('Hello!');
